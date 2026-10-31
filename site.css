@@ -441,6 +441,27 @@ h3 { font-family: var(--display); font-weight: 700; font-size: 1.35rem; letter-s
 .close-inner { padding-block: clamp(64px, 9vw, 120px); display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 28px; }
 .close-title { font-family: var(--display); font-weight: 800; font-size: clamp(3rem, 8vw, 7.4rem); line-height: 0.9; letter-spacing: -0.05em; max-width: 11ch; }
 
+/* legal pages: privacy.html, terms.html */
+.top-cta { margin-left: auto; }
+.legal { padding-block: clamp(48px, 7vw, 110px) clamp(72px, 9vw, 140px); }
+.legal-grid { display: grid; grid-template-columns: minmax(0, 0.7fr) minmax(0, 1.3fr); gap: clamp(40px, 6vw, 96px); align-items: start; }
+.legal-head { display: grid; gap: 18px; position: sticky; top: 32px; }
+.legal-meta { color: var(--ink-3); font-size: 0.95rem; }
+.legal-toc { display: grid; gap: 6px; font-size: 0.95rem; }
+.legal-toc a { color: var(--ink-2); text-decoration: none; }
+.legal-toc a:hover { color: var(--ink); text-decoration: underline; text-underline-offset: 3px; }
+.legal-body { max-width: 68ch; }
+.legal-body section { padding-block: 26px; border-top: 1px solid var(--line); scroll-margin-top: 24px; }
+.legal-body section:last-child { border-bottom: 1px solid var(--line); }
+.legal-body h2 { font-family: var(--display); font-weight: 700; font-size: 1.45rem; letter-spacing: -0.015em; line-height: 1.15; margin-bottom: 12px; }
+.legal-body p, .legal-body li { color: var(--ink-2); }
+.legal-body p + p, .legal-body p + ul, .legal-body ul + p { margin-top: 12px; }
+.legal-body ul { display: grid; gap: 8px; }
+.legal-body li { padding-left: 18px; position: relative; }
+.legal-body li::before { content: ""; position: absolute; left: 2px; top: 0.7em; width: 6px; height: 6px; border-radius: 50%; background: var(--amber); }
+.legal-body strong { color: var(--ink); font-weight: 600; }
+.legal-body a { color: var(--blue-ink); text-underline-offset: 3px; overflow-wrap: anywhere; }
+
 /* footer */
 .foot { padding-block: 56px 40px; }
 .foot-grid { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 28px; align-items: start; }
@@ -477,6 +498,8 @@ h3 { font-family: var(--display); font-weight: 700; font-size: 1.35rem; letter-s
   .story-photo, .struck { position: static; }
   .story-photo { max-width: 560px; }
   .how-phone, .out-grid > div, .tech-grid > div, .faq-grid > .h2 { position: static; }
+  .legal-grid { grid-template-columns: minmax(0, 1fr); }
+  .legal-head { position: static; }
   .start-phone { order: 2; }
   .road-cols { grid-template-columns: minmax(0, 1fr); gap: 40px; }
   .road-col { padding-left: 40px; padding-right: 0; }
