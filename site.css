@@ -295,8 +295,6 @@ h3 { font-family: var(--display); font-weight: 700; font-size: 1.35rem; letter-s
 .strip li { flex: 0 0 auto; width: clamp(240px, 27vw, 380px); scroll-snap-align: start; display: grid; gap: 12px; }
 .strip li:nth-child(even) { margin-top: 48px; }
 .strip img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: var(--r-sm); }
-.places .strip li { width: clamp(280px, 32vw, 440px); }
-.places .strip img { aspect-ratio: 1074 / 1029; object-fit: contain; background: transparent; }
 .strip span { font-family: var(--display); font-weight: 650; font-size: 1.2rem; letter-spacing: -0.01em; }
 
 /* start a table: the blue section */
