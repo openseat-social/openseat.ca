@@ -192,9 +192,8 @@ h3 { font-family: var(--display); font-weight: 700; font-size: 1.35rem; letter-s
 }
 .hero-title {
   font-family: var(--display); font-weight: 800;
-  font-size: clamp(3.4rem, 9.4vw, 9rem);
-  line-height: 0.88; letter-spacing: -0.05em;
-  max-width: 12ch;
+  font-size: clamp(2.7rem, 7.4vw, 7.2rem);
+  line-height: 0.9; letter-spacing: -0.035em;
   margin-left: -0.04em;
 }
 .hero-title .stop { color: var(--blue); }
@@ -261,6 +260,25 @@ h3 { font-family: var(--display); font-weight: 700; font-size: 1.35rem; letter-s
 .story-copy .h2 { margin-bottom: 10px; color: var(--ink); }
 .story-seat { display: inline-flex; align-items: center; gap: 12px; justify-self: start; padding: 10px 18px; border-radius: 999px; background: var(--paper-2); color: var(--ink); font-weight: 600; }
 .story-punch { font-family: var(--display); font-weight: 750; font-size: clamp(1.6rem, 2.8vw, 2.3rem); line-height: 1.1; letter-spacing: -0.025em; color: var(--ink); margin-top: 8px; }
+
+/* the copy half: one line per beat */
+.caps { letter-spacing: -0.02em; line-height: 0.95; }
+.beats { display: grid; gap: 10px; align-content: start; font-size: 1.2rem; line-height: 1.45; color: var(--ink-2); }
+.beats .h2 { color: var(--ink); margin-bottom: 14px; }
+.beats .strong { color: var(--ink); font-weight: 700; }
+.beats .tagline { font-style: italic; color: var(--blue-ink); }
+.beat-cta { margin-top: 14px; }
+.chair { padding-block: clamp(80px, 10vw, 140px); background: var(--paper-2); }
+.leave { padding-block: clamp(90px, 11vw, 160px); }
+.leave-grid { display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr); gap: clamp(40px, 6vw, 96px); align-items: start; }
+.close-side { display: grid; gap: 12px; justify-items: start; }
+.close-line { font-size: 1.05rem; opacity: 0.92; }
+.how-data { display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr); gap: clamp(40px, 6vw, 96px); align-items: start; }
+.how-data .steps { margin-top: 0; }
+.tt { padding-block: clamp(80px, 10vw, 140px); }
+.tt-grid { display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr); gap: clamp(40px, 6vw, 96px); align-items: start; }
+.tt-grid > div:first-child { display: grid; gap: 18px; }
+.tt .hosts-items p { color: var(--ink-2); }
 
 /* day strip */
 .day { padding-block: clamp(80px, 10vw, 150px) clamp(56px, 7vw, 100px); }
@@ -334,10 +352,8 @@ h3 { font-family: var(--display); font-weight: 700; font-size: 1.35rem; letter-s
 .out { padding-block: clamp(90px, 11vw, 170px); }
 .out-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(40px, 6vw, 96px); align-items: start; }
 .out-grid > div { display: grid; gap: 18px; }
-.leave-copy > p:not(.lede) { color: var(--ink-2); max-width: 52ch; }
-.leave-copy > p.leave-big { font-family: var(--display); font-weight: 650; font-size: clamp(1.35rem, 2.2vw, 1.8rem); line-height: 1.2; letter-spacing: -0.02em; color: var(--ink); }
-.leave-copy > p.leave-attn { font-family: var(--display); font-weight: 800; font-size: clamp(1.8rem, 3.4vw, 2.8rem); line-height: 1; letter-spacing: -0.035em; color: var(--blue-ink); }
-.leave-copy > p.strong { color: var(--ink); }
+.beats .leave-big { font-family: var(--display); font-weight: 650; font-size: clamp(1.35rem, 2.2vw, 1.8rem); line-height: 1.2; letter-spacing: -0.02em; color: var(--ink); }
+.beats .leave-attn { font-family: var(--display); font-weight: 800; font-size: clamp(1.8rem, 3.4vw, 2.8rem); line-height: 1; letter-spacing: -0.035em; color: var(--blue-ink); }
 .struck { position: sticky; top: 32px; }
 .struck li {
   font-family: var(--display); font-weight: 700;
@@ -457,7 +473,7 @@ h3 { font-family: var(--display); font-weight: 700; font-size: 1.35rem; letter-s
   .btn-small { margin-left: auto; }
   .hero-head { grid-template-columns: minmax(0, 1fr); align-items: start; }
   .hero-side { padding-bottom: 0; }
-  .how-grid, .start-grid, .el-grid, .hosts-grid, .out-grid, .tech-grid, .co-grid, .faq-grid, .pov-grid, .story-grid, .why-grid { grid-template-columns: minmax(0, 1fr); }
+  .how-grid, .start-grid, .el-grid, .hosts-grid, .out-grid, .tech-grid, .co-grid, .faq-grid, .pov-grid, .story-grid, .why-grid, .leave-grid, .how-data, .tt-grid { grid-template-columns: minmax(0, 1fr); }
   .story-photo, .struck { position: static; }
   .story-photo { aspect-ratio: 3 / 2; }
   .how-phone, .out-grid > div, .tech-grid > div, .faq-grid > .h2 { position: static; }
@@ -478,7 +494,7 @@ h3 { font-family: var(--display); font-weight: 700; font-size: 1.35rem; letter-s
 @media (max-width: 700px) {
   body { font-size: 1.02rem; }
   .brand-word { font-size: 1.25rem; }
-  .hero-title { font-size: clamp(3rem, 15.5vw, 4.6rem); }
+  .hero-title { font-size: clamp(2.5rem, 12.4vw, 3.6rem); }
   .ctas .btn { flex: 1 1 auto; justify-content: center; }
   .hero-photo { aspect-ratio: 4 / 3.4; object-position: 18% 50%; }
   .hero-phone { width: 40%; right: 12px; bottom: -42%; }
