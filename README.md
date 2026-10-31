@@ -1,6 +1,6 @@
 # openseat.ca
 
-The company website for [OpenSeat](https://openseat.ca), a social dining app by OpenSeat LLC.
+The company website for [OpenSeat](https://openseat.ca), an app for meeting new people over food and drinks at real places, by OpenSeat LLC.
 
 One static page: HTML, CSS, self-hosted fonts and images. No build step and no scripts, so it runs under a strict Content Security Policy. Served by Caddy.
 

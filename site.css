@@ -184,7 +184,7 @@ h3 { font-family: var(--display); font-weight: 700; font-size: 1.35rem; letter-s
   display: inline-flex; align-items: center; gap: 10px;
   font-size: 0.95rem; color: var(--ink-2);
 }
-.status .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--amber); }
+.status .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--amber); flex: none; align-self: flex-start; margin-top: 0.55em; }
 .hero-head {
   display: grid; grid-template-columns: minmax(0, 1fr);
   gap: clamp(20px, 2.6vw, 36px);
