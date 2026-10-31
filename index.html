@@ -1,0 +1,502 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>OpenSeat | Meet new people at a table</title>
+<meta name="description" content="Meet new people over lunch, coffee or dinner with OpenSeat, a social dining app. Browse events or start a table. In active development.">
+<link rel="canonical" href="https://openseat.ca/">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#f6f8fc" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#11151d" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="OpenSeat">
+<meta property="og:url" content="https://openseat.ca/">
+<meta property="og:title" content="OpenSeat | Meet new people at a table">
+<meta property="og:description" content="A social dining app. Browse events at real places, claim a seat and meet the people at your table.">
+<meta property="og:image" content="https://openseat.ca/assets/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/icon-192.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preload" href="assets/fonts/bricolage-grotesque.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/hanken-grotesk.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="site.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://openseat.ca/#org",
+      "name": "OpenSeat",
+      "legalName": "OpenSeat LLC",
+      "url": "https://openseat.ca/",
+      "logo": "https://openseat.ca/assets/icon-192.png",
+      "email": "accounts@openseat.ca",
+      "founder": { "@type": "Person", "name": "Stephen Iervella", "jobTitle": "Founder and CEO" },
+      "sameAs": ["https://github.com/openseat-social"]
+    },
+    {
+      "@type": "WebSite",
+      "url": "https://openseat.ca/",
+      "name": "OpenSeat",
+      "publisher": { "@id": "https://openseat.ca/#org" }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "OpenSeat",
+      "applicationCategory": "SocialNetworkingApplication",
+      "operatingSystem": "Web",
+      "url": "https://app.openseat.ca/",
+      "publisher": { "@id": "https://openseat.ca/#org" }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top">
+  <div class="wrap top-row">
+    <a class="brand" href="/" aria-label="OpenSeat home">
+      <span class="pips" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i></span>
+      <span class="brand-word">OpenSeat</span>
+    </a>
+    <nav class="top-nav" aria-label="Sections">
+      <a href="#how">How it works</a>
+      <a href="#membership">Membership</a>
+      <a href="#roadmap">Roadmap</a>
+      <a href="#company">Company</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a class="btn btn-small" href="https://app.openseat.ca">Open the app</a>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- Hero -->
+<section class="hero" aria-labelledby="hero-title">
+  <div class="wrap">
+    <p class="status load" data-d="0"><span class="dot" aria-hidden="true"></span>A social dining app for adults. In active development.</p>
+    <div class="hero-head">
+      <h1 id="hero-title" class="hero-title load" data-d="1">You never know who you'll meet<span class="stop">.</span></h1>
+      <div class="hero-side load" data-d="2">
+        <p class="hero-sub">I thought I'd give luck a little help.</p>
+        <div class="ctas">
+          <a class="btn" href="https://app.openseat.ca">Pull up a chair<span class="btn-arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+          <a class="btn btn-quiet" href="#how">See how it works</a>
+        </div>
+      </div>
+    </div>
+    <div class="hero-stage load" data-d="3">
+      <picture>
+        <source media="(max-width: 700px)" srcset="assets/photos/hero-toast-1200.webp">
+        <img class="hero-photo" src="assets/photos/hero-toast.webp" width="2400" height="1600" alt="Five friends raise glasses over a long wooden table set with salads and pasta in a bright kitchen.">
+      </picture>
+      <figure class="phone hero-phone">
+        <img src="assets/screens/home.webp" width="780" height="1688" alt="The OpenSeat home screen: Eleanor, the assistant, shows two upcoming seats and suggests two events.">
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- Point of view -->
+<section class="pov" aria-labelledby="pov-title">
+  <div class="wrap pov-grid">
+    <h2 id="pov-title" class="pov-line reveal">Some of the best people in your life might still be strangers.</h2>
+    <div class="pov-foot">
+      <p class="pov-beats reveal">The next great story. A new friend. A night you'll talk about for years.</p>
+      <p class="reveal">They're out there. You just haven't crossed paths.</p>
+      <p class="pov-built reveal">So I built OpenSeat.</p>
+      <p class="pov-tag reveal">Good places. New faces. Anything can happen.</p>
+    </div>
+  </div>
+</section>
+
+<!-- How it works -->
+<section class="how" id="how" aria-labelledby="how-title">
+  <div class="wrap how-grid">
+    <div class="how-copy">
+      <h2 id="how-title" class="h2 reveal">It starts with an empty chair.</h2>
+      <p class="lede reveal">Find a table at a local restaurant. Claim a seat. Show up. Or start your own table and let others join.</p>
+      <div class="chair-copy reveal">
+        <p>No swiping. No awkward invites. No group chat that needs a project manager. No weeks of messaging that eventually dies of natural causes.</p>
+        <p class="strong">Just real people, getting together in real places.</p>
+        <p>Maybe you make a friend for life. Maybe you just have great rigatoni. And if it all goes sideways, at least there's cheesecake.</p>
+        <p class="strong">Either way, you win.</p>
+      </div>
+      <p class="reveal small-note">Every event shows its venue from the start: the photo, the address and the website, before you choose.</p>
+      <ol class="steps">
+        <li class="reveal">
+          <span class="step-n" aria-hidden="true">1</span>
+          <div>
+            <h3>Find an event</h3>
+            <p>Browse meals and get-togethers at real places, at any time of day. A table that has not confirmed yet reads <span class="tag">Open</span></p>
+          </div>
+        </li>
+        <li class="reveal">
+          <span class="step-n" aria-hidden="true">2</span>
+          <div>
+            <h3>Claim a seat</h3>
+            <p>A seat uses one credit from your membership. You can see how many have been claimed: <span class="claimed"><span class="pips" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span>3 of 4 claimed</span></p>
+            <p>Changed your mind? Release the seat before the cutoff shown on the event and the credit comes back. After the cutoff it is spent. If a table does not go ahead, the credit comes back.</p>
+          </div>
+        </li>
+        <li class="reveal">
+          <span class="step-n" aria-hidden="true">3</span>
+          <div>
+            <h3>Show up</h3>
+            <p>Meet the people at your table. Names show once you have met. Afterwards, if you both want to stay in touch, you become friends.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+    <figure class="phone how-phone reveal">
+      <img src="assets/screens/k-claim.webp" width="780" height="1688" loading="lazy" alt="The Take a seat sheet: one seat credit, free to release until the cutoff, after that the credit is spent.">
+    </figure>
+  </div>
+</section>
+
+<!-- Tuesday -->
+<section class="story" aria-labelledby="story-title">
+  <div class="wrap story-grid">
+    <img class="story-photo reveal" src="assets/photos/lunch-900.webp" width="900" height="600" loading="lazy" alt="A woman laughs across a restaurant table set with small plates and wine.">
+    <div class="story-copy">
+      <h2 id="story-title" class="h2 reveal">Tuesday doesn't have to suck.</h2>
+      <p class="reveal">Nothing planned tonight?</p>
+      <p class="reveal">There's a table for four at that little Italian place you've never tried.</p>
+      <p class="story-seat reveal"><span class="pips" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span>Three seats taken. One left.</p>
+      <p class="reveal">You grab it.</p>
+      <p class="reveal">By dessert, you're laughing with people who were complete strangers two hours ago.</p>
+      <p class="reveal">Maybe you do it again next week. Maybe you end up traveling together next summer.</p>
+      <p class="story-punch reveal">Or maybe Tuesday just embarrassed Saturday.</p>
+      <p class="reveal">That's the beauty of it. You never know.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Any time of day -->
+<section class="day" aria-labelledby="day-title">
+  <div class="wrap day-head">
+    <h2 id="day-title" class="h2 reveal">Any time of day.</h2>
+    <p class="lede reveal">Events happen at restaurants, cafes, bars and other real places. Pick the one you want to go to.</p>
+  </div>
+  <div class="strip-wrap">
+    <ul class="strip" aria-label="Kinds of events">
+      <li><img src="assets/photos/brunch-900.webp" width="900" height="600" loading="lazy" alt="Four friends laughing over brunch plates and coffee at a sunny garden cafe."><span>Brunch</span></li>
+      <li><img src="assets/photos/coffee-900.webp" width="900" height="506" loading="lazy" alt="Four people laughing around a small cafe table with coffees and a croissant."><span>Coffee</span></li>
+      <li><img src="assets/photos/cooking-900.webp" width="900" height="600" loading="lazy" alt="Three people of different ages cook vegetables together at a stove."><span>Cook-from-scratch, ticketed by its host</span></li>
+      <li><img src="assets/photos/dinner-candles-900.webp" width="900" height="1125" loading="lazy" alt="A long candlelit dinner table under a chandelier, guests raising their glasses."><span>Dinner</span></li>
+      <li><img src="assets/photos/drinks-900.webp" width="900" height="600" loading="lazy" alt="Three friends laughing hard over drinks in a warm bar."><span>Drinks</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- Start a table -->
+<section class="start" id="start" aria-labelledby="start-title">
+  <div class="wrap start-grid">
+    <figure class="phone start-phone reveal">
+      <img src="assets/screens/st-propose.webp" width="780" height="1688" loading="lazy" alt="Proposing an event: tacos and tequila at happy hour, a place, a time and a table of four.">
+    </figure>
+    <div class="start-copy">
+      <h2 id="start-title" class="h2 reveal">Your idea. An open table.</h2>
+      <p class="big reveal">Have a cafe in mind? Want company for Tuesday lunch?</p>
+      <p class="reveal">Start a table. Pick the place and the time, and other people can claim the seats. A table of two can go ahead.</p>
+      <p class="reveal">Starting a table makes you its proposer. It gives you no special powers over it.</p>
+      <dl class="start-fields reveal">
+        <div><dt>Place</dt><dd>A real venue</dd></div>
+        <div><dt>Time</dt><dd>Whenever suits</dd></div>
+        <div><dt>Table</dt><dd>Two or more</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<!-- What we leave out -->
+<section class="out" aria-labelledby="out-title">
+  <div class="wrap out-grid">
+    <div class="leave-copy">
+      <h2 id="out-title" class="h2 reveal">The app that wants you to leave.</h2>
+      <p class="lede reveal">Most apps fight for your attention. Then charge you to get noticed.</p>
+      <p class="leave-big reveal">Your social life is being managed by an algorithm with a sales target and the emotional intelligence of a parking meter.</p>
+      <p class="reveal">Not here. No paid boosts. No popularity contests. No digital meat market.</p>
+      <p class="leave-attn reveal">You are the attention. And it's not for sale.</p>
+      <p class="reveal">Find your table. Make your plans. Put the damn phone away.</p>
+      <p class="strong reveal">Less screen time. More stories worth telling.</p>
+    </div>
+    <ul class="struck" aria-label="What OpenSeat leaves out">
+      <li class="reveal">Swiping profiles</li>
+      <li class="reveal">Compatibility scores</li>
+      <li class="reveal">Star ratings</li>
+      <li class="reveal">Streaks and leaderboards</li>
+      <li class="reveal">Admirer counts</li>
+      <li class="reveal">Seats-left countdowns</li>
+      <li class="reveal">AI speaking for you</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Eleanor -->
+<section class="eleanor" id="eleanor" aria-labelledby="el-title">
+  <div class="wrap el-grid">
+    <div class="el-copy">
+      <h2 id="el-title" class="h2 reveal">Eleanor helps with the plans.</h2>
+      <p class="lede reveal">Every member's assistant starts as Eleanor. You can change her name and picture.</p>
+      <p class="reveal">She helps you find events and start tables. She works with what you tell her and what each event's public page shows.</p>
+      <div class="el-lists">
+        <div class="reveal">
+          <h3>She does</h3>
+          <ul>
+            <li>Speak as herself</li>
+            <li>Find events and start tables</li>
+            <li>Show you each thing she has learned about you, and delete it when you ask</li>
+          </ul>
+        </div>
+        <div class="reveal">
+          <h3>She does not</h3>
+          <ul class="nots">
+            <li>Write your messages, coach you or suggest replies</li>
+            <li>Join your conversations with other people</li>
+            <li>Know what happened at the table, or who said what</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <figure class="phone el-phone reveal">
+      <img src="assets/screens/assistant.webp" width="780" height="1688" loading="lazy" alt="The Your assistant screen: Eleanor's name and picture can be changed, and what she remembers can be edited or deleted.">
+    </figure>
+  </div>
+</section>
+
+<!-- Hosts and Tribes -->
+<section class="hosts" id="hosts" aria-labelledby="hosts-title">
+  <div class="wrap hosts-grid">
+    <img class="hosts-photo reveal" src="assets/photos/cooking.webp" width="1600" height="1067" loading="lazy" alt="Three people cook a stir fry together in a bright home kitchen.">
+    <div class="hosts-copy">
+      <h2 id="hosts-title" class="h2 reveal">Your people. Your business.</h2>
+      <p class="lede reveal">Want to host dinners, sell tickets, or build a community? Go for it.</p>
+      <p class="fee reveal">0% OpenSeat fees on tickets and Tribe dues today.</p>
+      <p class="reveal">Apparently, letting people keep their own money is now considered revolutionary.</p>
+      <div class="hosts-items">
+        <div class="reveal">
+          <h3>Tickets</h3>
+          <p>Sell tickets through Stripe. Hosts are paid through Stripe Connect. OpenSeat takes no fee on tickets today.</p>
+        </div>
+        <div class="reveal">
+          <h3>Tribes</h3>
+          <p>A Tribe is a host's audience on OpenSeat, like an email list. Anyone can join free. Hosts can charge dues through their own Stripe account, and OpenSeat's fee on dues is 0%.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Membership -->
+<section class="member" id="membership" aria-labelledby="mem-title">
+  <div class="wrap">
+    <div class="mem-head">
+      <h2 id="mem-title" class="h2 reveal">Browse free. Join for a seat.</h2>
+      <p class="lede reveal">Free to browse. Membership gives you monthly credits for seats, including some to share. Pay your own bill. No tricks. No paying to be popular.</p>
+    </div>
+    <div class="price-rows">
+      <div class="price reveal">
+        <p class="amount">$0</p>
+        <div><h3>Free account</h3><p>Browse every event.</p></div>
+      </div>
+      <div class="price price-main reveal">
+        <p class="amount">$22<span>a month</span></p>
+        <div><h3>Membership</h3><p>8 seat credits and 3 gift credits each month. One price.</p></div>
+      </div>
+      <div class="price reveal">
+        <p class="amount">$2</p>
+        <div><h3>Extra seat credit</h3><p>One more seat, when you want it.</p></div>
+      </div>
+    </div>
+    <p class="fine reveal">A seat uses a credit from your membership. Claiming it is not a separate card charge. Gift credits let you bring someone along or give someone a seat.</p>
+  </div>
+</section>
+
+<!-- Why -->
+<section class="why" aria-labelledby="why-title">
+  <div class="wrap why-grid">
+    <h2 id="why-title" class="h2 reveal">Why did I build it?</h2>
+    <div class="why-copy">
+      <p class="reveal">Simple. I like my life. I like my friends.</p>
+      <p class="why-big reveal">I just haven't met all of them yet.</p>
+      <p class="reveal">I'm Stephen. I built OpenSeat. An entire technology platform because I wanted to meet more people. <span class="strong">I may have over-engineered it. Force of habit.</span></p>
+      <p class="reveal">Self-funded. No business model built around keeping people lonely, scrolling, and paying to be seen. Just a better way to get people together.</p>
+      <p class="reveal">Because somewhere out there is someone you'll get along with famously. <span class="strong">And right now, neither of you has a clue.</span></p>
+      <p class="reveal">I thought we should fix that.</p>
+      <div class="founder reveal">
+        <p class="founder-name">Stephen Iervella</p>
+        <p class="founder-role">Founder and CEO, OpenSeat LLC</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Roadmap -->
+<section class="road" id="roadmap" aria-labelledby="road-title">
+  <div class="wrap">
+    <div class="road-head">
+      <h2 id="road-title" class="h2 reveal">The plan from here.</h2>
+      <p class="lede reveal">We are building v1 for one complete launch. Everything after it is planned, and no dates are set.</p>
+    </div>
+    <ol class="road-cols">
+      <li class="road-col is-now reveal">
+        <p class="road-when"><span class="road-dot" aria-hidden="true"></span>Now</p>
+        <h3>Building v1</h3>
+        <p>The web app is in active development at app.openseat.ca: events, seats, tables, membership, tickets, Tribes and the assistant.</p>
+      </li>
+      <li class="road-col reveal">
+        <p class="road-when"><span class="road-dot" aria-hidden="true"></span>At launch</p>
+        <h3>All of v1, in one launch</h3>
+        <p>v1 ships whole, not in stages.</p>
+      </li>
+      <li class="road-col reveal">
+        <p class="road-when"><span class="road-dot" aria-hidden="true"></span>After launch</p>
+        <h3>Planned next</h3>
+        <ul>
+          <li>Business accounts and a business portal, with a $100-a-month business package</li>
+          <li>Venues claiming their own page, with photos, logos, websites and replies</li>
+          <li>Partner venues that confirm tables instantly</li>
+          <li>Sponsors and organizations funding seats for a group, such as community groups and social prescribing</li>
+          <li>Invite-only private events, co-hosted events and a weekly standing event booked by the assistant</li>
+          <li>A $220 annual pass</li>
+          <li>Sign in with Apple and a native app</li>
+          <li>Online events for Tribes</li>
+        </ul>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- Technology -->
+<section class="tech" id="technology" aria-labelledby="tech-title">
+  <div class="wrap tech-grid">
+    <div>
+      <h2 id="tech-title" class="h2 reveal">The software behind the seat.</h2>
+      <p class="lede reveal">The web app runs at <a href="https://app.openseat.ca">app.openseat.ca</a> and is in active development. This is the stack today, including the planned move for the assistant.</p>
+    </div>
+    <dl class="spec">
+      <div class="reveal"><dt>Application</dt><dd>One TypeScript codebase: a React web app, a Fastify API on Node.js and a background worker. PostgreSQL 16 stores the data.</dd></div>
+      <div class="reveal"><dt>Hosting</dt><dd>Docker on our own Linode server.</dd></div>
+      <div class="reveal"><dt>Payments</dt><dd>Stripe handles memberships and tickets. Stripe Connect pays hosts. A refund is marked complete only after the payment provider confirms the money moved.</dd></div>
+      <div class="reveal"><dt>Privacy</dt><dd>Members choose what to share, item by item, during setup. Anyone can download everything OpenSeat holds about them. Strangers' names stay private until they have met at a table.</dd></div>
+      <div class="reveal"><dt>Sign-in</dt><dd>Email sign-in links, Google, Facebook and passkeys.</dd></div>
+      <div class="reveal"><dt>Assistant</dt><dd>Eleanor runs on Claude through the Anthropic API, with a daily spending limit per member. The move to Amazon Bedrock is planned and budgeted; the code is merged and the migration is ahead.</dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- Company -->
+<section class="company" id="company" aria-labelledby="co-title">
+  <div class="wrap co-grid">
+    <div>
+      <h2 id="co-title" class="h2 reveal">The company behind OpenSeat.</h2>
+      <p class="lede reveal">OpenSeat LLC is self-funded and building the first version of OpenSeat, to launch whole, in one release.</p>
+    </div>
+    <dl class="facts reveal">
+      <div><dt>Company</dt><dd>OpenSeat LLC</dd></div>
+      <div><dt>Founder and CEO</dt><dd>Stephen Iervella</dd></div>
+      <div><dt>Funding</dt><dd>Self-funded</dd></div>
+      <div><dt>Stage</dt><dd>Building v1</dd></div>
+      <div><dt>Product</dt><dd><a href="https://app.openseat.ca">app.openseat.ca</a></dd></div>
+      <div><dt>Contact</dt><dd><a href="mailto:accounts@openseat.ca">accounts@openseat.ca</a></dd></div>
+      <div><dt>GitHub</dt><dd><a href="https://github.com/openseat-social">github.com/openseat-social</a></dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq" aria-labelledby="faq-title">
+  <div class="wrap faq-grid">
+    <h2 id="faq-title" class="h2 reveal">Before you take a seat.</h2>
+    <div class="qs">
+      <details>
+        <summary>What is OpenSeat?</summary>
+        <p>A social dining app for adults. You browse events at real places, claim a seat and meet the people at the table. You can also start a table yourself.</p>
+      </details>
+      <details>
+        <summary>What does it cost?</summary>
+        <p>Browsing and an account are free. Membership is $22 a month and includes 8 seat credits and 3 gift credits each month. Extra seat credits are $2 each. Hosts also sell tickets to their own events.</p>
+      </details>
+      <details>
+        <summary>Can I release a seat I claimed?</summary>
+        <p>Yes, until the cutoff shown on the event. Release it before then and the credit comes back. After the cutoff the credit is spent. If a table does not go ahead, the credit comes back.</p>
+      </details>
+      <details>
+        <summary>What if an event is full?</summary>
+        <p>A full event keeps a line. People who ask to be told about a freed seat are told in order.</p>
+      </details>
+      <details>
+        <summary>Can I bring someone?</summary>
+        <p>Yes. Gift credits let you bring someone along or give someone a seat. Membership includes 3 gift credits each month.</p>
+      </details>
+      <details>
+        <summary>Who will be at the table?</summary>
+        <p>People who claimed a seat, or were given one. Each event can carry a recommended age range as a guide. Names show once you have met at a table together.</p>
+      </details>
+      <details>
+        <summary>How is my data handled?</summary>
+        <p>You choose what to share, item by item, during setup. Strangers cannot see your name until you have met at a table. You can see and delete what Eleanor has learned about you, and download everything OpenSeat holds about you.</p>
+      </details>
+      <details>
+        <summary>What is a Tribe?</summary>
+        <p>A host's audience on OpenSeat, like an email list. Joining is free. Hosts can charge dues through their own Stripe account, and OpenSeat's fee on those dues is 0%.</p>
+      </details>
+      <details>
+        <summary>Where is OpenSeat available?</summary>
+        <p>The app is in active development and has not launched. Launch plans have not been announced. Write to <a href="mailto:accounts@openseat.ca">accounts@openseat.ca</a> with any questions.</p>
+      </details>
+      <details>
+        <summary>Who runs OpenSeat?</summary>
+        <p>OpenSeat LLC, a self-funded company. Stephen Iervella is its founder and CEO. You can reach the company at <a href="mailto:accounts@openseat.ca">accounts@openseat.ca</a>.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- Close -->
+<section class="close" aria-labelledby="close-title">
+  <img class="close-photo" src="assets/photos/long-table-evening.webp" width="2400" height="1600" loading="lazy" alt="Friends around a candlelit wooden table in a warm, wood-panelled restaurant.">
+  <div class="wrap close-inner">
+    <h2 id="close-title" class="close-title reveal">There's always room for one more.</h2>
+    <a class="btn btn-light reveal" href="https://app.openseat.ca">Pull up a chair<span class="btn-arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-grid">
+    <div>
+      <a class="brand" href="/" aria-label="OpenSeat home">
+        <span class="pips" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i></span>
+        <span class="brand-word">OpenSeat</span>
+      </a>
+      <p class="foot-line">Made for actual human beings. Currently in development.</p>
+      <p class="foot-line">OpenSeat LLC</p>
+    </div>
+    <nav class="foot-nav" aria-label="Footer">
+      <a href="https://app.openseat.ca">Open the app</a>
+      <a href="mailto:accounts@openseat.ca">accounts@openseat.ca</a>
+      <a href="https://github.com/openseat-social">GitHub</a>
+    </nav>
+  </div>
+  <div class="wrap credits">
+    <p>App screens are from OpenSeat in development. Photos from Unsplash by
+      <a href="https://unsplash.com/@sweetlifediabetes">Sweet Life</a>,
+      <a href="https://unsplash.com/@queenslandaustralia">Queensland, Australia</a>,
+      <a href="https://unsplash.com/@silverkblack">Vitaly Gariev</a>,
+      <a href="https://unsplash.com/@sebastiancoman">Sebastian Coman Photography</a>,
+      <a href="https://unsplash.com/@ourwhiskyfoundation">OurWhisky Foundation</a> and
+      <a href="https://unsplash.com/@wamstudio">Romain Gal</a>.</p>
+  </div>
+</footer>
+</body>
+</html>
