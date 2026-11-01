@@ -475,9 +475,10 @@ h3 { font-family: var(--display); font-weight: 700; font-size: 1.35rem; letter-s
 
 /* motion: hero loads in, sections settle as they scroll in. Content is never hidden. */
 @media (prefers-reduced-motion: no-preference) {
-  .load { animation: rise 0.9s var(--ease) both; }
+  /* The hero picture is not animated: it is the largest paint, and a fade delays it (2026-10-31, GTmetrix LCP 4.1 s). */
+  .load { animation: rise 0.5s var(--ease) both; }
   .load[data-d="1"] { animation-delay: 0.08s; }
-  .load[data-d="2"] { animation-delay: 0.2s; }
+  .load[data-d="2"] { animation-delay: 0.12s; }
   .load[data-d="3"] { animation-delay: 0.32s; }
   @keyframes rise { from { opacity: 0.001; transform: translateY(18px); } }
   @supports (animation-timeline: view()) {
