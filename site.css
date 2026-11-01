@@ -536,3 +536,39 @@ h3 { font-family: var(--display); font-weight: 700; font-size: 1.35rem; letter-s
   .steps li { grid-template-columns: 44px minmax(0, 1fr); }
   .step-n { font-size: 2rem; }
 }
+
+/* Motion (assets/js/motion-v1.js): the animated demos replace their still once they can play, so they take the
+   still's classes; Lottie spots reserve their square before anything loads. */
+video.hero-photo, video.story-photo, video.render { display: block; height: auto; object-fit: cover; background: transparent; }
+.lottie {
+  --lt-ink: var(--ink);
+  --lt-accent: var(--blue);
+  --lt-pip: var(--amber);
+  --lt-off: var(--pip-off);
+  --lt-line: var(--line);
+  --lt-bg: var(--paper);
+  position: relative;
+  display: block;
+  width: 100%;
+  aspect-ratio: 1;
+}
+.lottie > svg, .lottie-player { position: absolute; inset: 0; width: 100%; height: 100%; }
+.lottie > svg { display: block; overflow: visible; }
+.lottie.is-live > .lottie-still { visibility: hidden; }
+
+.lottie .s-ink { stroke: var(--lt-ink); }
+.lottie .s-accent { stroke: var(--lt-accent); }
+.lottie .s-pip { stroke: var(--lt-pip); }
+.lottie .s-off { stroke: var(--lt-off); }
+.lottie .s-line { stroke: var(--lt-line); }
+.lottie .f-pip { fill: var(--lt-pip); }
+.lottie .f-accent { fill: var(--lt-accent); }
+.lottie .f-bg { fill: var(--lt-bg); }
+.spot { width: 120px; margin-bottom: 4px; }
+.spot-sm { width: 76px; }
+.gift-line { display: flex; align-items: center; gap: 14px; }
+.gift-line .spot-sm { flex: none; width: 64px; }
+
+.gift-line { margin-top: 24px; }
+.gift-line .fine { margin-top: 0; }
+.steps .spot-sm { width: 64px; margin: -14px 0 -16px -12px; }
